@@ -11,5 +11,7 @@ class Main(object):
     #a.click() #клик ЛКМ
     a.moveTo(700, 1050, duration=2.5)
     a.click(button="right")
-    a.moveTo(750, 950, duration=2.5)
+    a.moveTo(
+
+    750, 950, duration=2.5)
     a.click()
