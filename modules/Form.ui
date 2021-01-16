@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>Auxprog</class>
+ <widget class="QDialog" name="Auxprog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Auxprog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../Pictures/Saved Pictures/Путин.jpg</normaloff>../../../../Pictures/Saved Pictures/Путин.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">.QPushButton {
@@ -243,7 +247,7 @@ p, li { white-space: pre-wrap; }
     <string>Разгон(Згаживание)</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="label_freze">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -597,7 +601,7 @@ p, li { white-space: pre-wrap; }
   <zorder>checkBox_3</zorder>
   <zorder>checkBox_4</zorder>
   <zorder>checkBox_5</zorder>
-  <zorder>label_5</zorder>
+  <zorder>label_freze</zorder>
   <zorder>pushButton_2</zorder>
   <zorder>pushButton_3</zorder>
   <zorder>label_6</zorder>
@@ -617,5 +621,38 @@ p, li { white-space: pre-wrap; }
   <zorder>label_10</zorder>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>horizontalSlider</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>121</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>213</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>label_freze</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>307</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>150</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

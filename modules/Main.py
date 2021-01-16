@@ -1,17 +1,22 @@
+import sys
 import pyautogui as a
+from PySide2 import QtWidgets
+from modules.Form import Ui_Auxprog
 
 class Main(object):
-    print(a.position()) #Позиция курсора
-    print(a.size()) #Разиер экрана
-    #a.PAUSE = 0.5
-    #a.move(-200, 300) #Смена позиции курсора(относительная)
-    #a.move(-200, 300, duration=2.5) #Медленая смена позиции курсора(относительная)
-    #a.moveTo(500, 500) #Смена позиции курсора(абсалютная)
-    #a.moveTo(100, 100, duration=2.5)  #Медленая смена позиции курсора(абсалютная)
-    #a.click() #клик ЛКМ
-    a.moveTo(700, 1050, duration=2.5)
-    a.click(button="right")
-    a.moveTo(
+    app = QtWidgets.QApplication(sys.argv)
+    form = QtWidgets.QDialog()
+    ui_Auxprog = Ui_Auxprog()
+    ui_Auxprog.setupUi(form)
+    form.show()
 
-    750, 950, duration=2.5)
-    a.click()
+    def test1(self):
+        print(a.position())
+
+    def test2(self):
+        pass
+
+    ui_Auxprog.pushButton_4.clicked.connect(test1)
+
+
+    sys.exit(app.exec_())
