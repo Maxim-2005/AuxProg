@@ -71,7 +71,7 @@ p, li { white-space: pre-wrap; }
     </rectf>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Startstop">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -586,10 +586,49 @@ p, li { white-space: pre-wrap; }
     <string>Скорость воиспроизведения</string>
    </property>
   </widget>
+  <widget class="QLabel" name="posX">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>90</y>
+     <width>47</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="posY">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>110</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="posY_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>40</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Позиция курсора:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
   <zorder>graphicsView_3</zorder>
   <zorder>graphicsView</zorder>
   <zorder>textEdit</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>Startstop</zorder>
   <zorder>label</zorder>
   <zorder>label_2</zorder>
   <zorder>label_3</zorder>
@@ -619,6 +658,9 @@ p, li { white-space: pre-wrap; }
   <zorder>pushButton_11</zorder>
   <zorder>horizontalSlider</zorder>
   <zorder>label_10</zorder>
+  <zorder>posX</zorder>
+  <zorder>posY</zorder>
+  <zorder>posY_2</zorder>
  </widget>
  <resources/>
  <connections>

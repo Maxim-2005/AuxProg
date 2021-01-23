@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'FormAdpnTI.ui'
+## Form generated from reading UI file 'FormWTeByE.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -13,10 +13,10 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
-class Ui_Auxprog(object):
+class Ui_Auxprog(QWidget):
     def setupUi(self, Auxprog):
         if not Auxprog.objectName():
-            Auxprog.setObjectName(u"Auxprog")
+                Auxprog.setObjectName(u"Auxprog")
         Auxprog.resize(720, 471)
         icon = QIcon()
         icon.addFile(u"../../../../Pictures/Saved Pictures/\u041f\u0443\u0442\u0438\u043d.jpg", QSize(), QIcon.Normal, QIcon.Off)
@@ -39,9 +39,9 @@ class Ui_Auxprog(object):
 "}")
         self.graphicsView.setInteractive(True)
         self.graphicsView.setSceneRect(QRectF(0, 0, 0, 0))
-        self.pushButton = QPushButton(Auxprog)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(30, 140, 131, 41))
+        self.Startstop = QPushButton(Auxprog)
+        self.Startstop.setObjectName(u"Startstop")
+        self.Startstop.setGeometry(QRect(30, 140, 131, 41))
         self.label = QLabel(Auxprog)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(20, 0, 81, 41))
@@ -169,10 +169,19 @@ class Ui_Auxprog(object):
         self.label_10.setObjectName(u"label_10")
         self.label_10.setGeometry(QRect(30, 350, 171, 41))
         self.label_10.setFont(font1)
+        self.posX = QLabel(Auxprog)
+        self.posX.setObjectName(u"posX")
+        self.posX.setGeometry(QRect(630, 90, 47, 16))
+        self.posY = QLabel(Auxprog)
+        self.posY.setObjectName(u"posY")
+        self.posY.setGeometry(QRect(630, 110, 47, 13))
+        self.posY_2 = QLabel(Auxprog)
+        self.posY_2.setObjectName(u"posY_2")
+        self.posY_2.setGeometry(QRect(550, 40, 141, 41))
         self.graphicsView_3.raise_()
         self.graphicsView.raise_()
         self.textEdit.raise_()
-        self.pushButton.raise_()
+        self.Startstop.raise_()
         self.label.raise_()
         self.label_2.raise_()
         self.label_3.raise_()
@@ -202,6 +211,9 @@ class Ui_Auxprog(object):
         self.pushButton_11.raise_()
         self.horizontalSlider.raise_()
         self.label_10.raise_()
+        self.posX.raise_()
+        self.posY.raise_()
+        self.posY_2.raise_()
 
         self.retranslateUi(Auxprog)
         self.pushButton_4.clicked.connect(self.horizontalSlider.hide)
@@ -217,7 +229,7 @@ class Ui_Auxprog(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">100</span></p></body></html>", None))
-        self.pushButton.setText(QCoreApplication.translate("Auxprog", u"\u0421\u0442\u0430\u0440\u0442/\u0421\u0442\u043e\u043f", None))
+        self.Startstop.setText(QCoreApplication.translate("Auxprog", u"\u0421\u0442\u0430\u0440\u0442/\u0421\u0442\u043e\u043f", None))
         self.label.setText(QCoreApplication.translate("Auxprog", u"\u041a\u043b\u0438\u043a\u0435\u0440", None))
         self.label_2.setText(QCoreApplication.translate("Auxprog", u"\u0417\u0430\u0434\u0435\u0440\u0436\u043a\u0430(\u043c\u0441)", None))
         self.label_3.setText(QCoreApplication.translate("Auxprog", u"\u041a\u043e\u043b-\u0432\u043e \u043a\u043b\u0438\u043a\u043e\u0432", None))
@@ -245,5 +257,8 @@ class Ui_Auxprog(object):
         self.label_9.setText(QCoreApplication.translate("Auxprog", u"\u0413\u043e\u0440\u044f\u0447\u0438\u0435 \u043a\u043b\u0430\u0432\u0438\u0448\u0438", None))
         self.pushButton_11.setText(QCoreApplication.translate("Auxprog", u"+", None))
         self.label_10.setText(QCoreApplication.translate("Auxprog", u"\u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u0432\u043e\u0438\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u044f", None))
+        self.posX.setText(QCoreApplication.translate("Auxprog", u"0", None))
+        self.posY.setText(QCoreApplication.translate("Auxprog", u"0", None))
+        self.posY_2.setText(QCoreApplication.translate("Auxprog", u"<html><head/><body><p><span style=\" font-size:12pt;\">\u041f\u043e\u0437\u0438\u0446\u0438\u044f \u043a\u0443\u0440\u0441\u043e\u0440\u0430:</span></p></body></html>", None))
     # retranslateUi
 
