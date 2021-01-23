@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'FormsVTVpM.ui'
+## Form generated from reading UI file 'FormfOzHqs.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -13,12 +13,12 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
-class Ui_AuxProg(object):
+class Ui_AuxProg(QDialog):
     def setupUi(self, AuxProg):
         if not AuxProg.objectName():
             AuxProg.setObjectName(u"AuxProg")
         AuxProg.setEnabled(True)
-        AuxProg.resize(210, 217)
+        AuxProg.resize(210, 251)
         AuxProg.setMouseTracking(False)
         icon = QIcon()
         icon.addFile(u"../../../../b8ca4fe6d5fa432462cc4dadb22c6068.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -53,7 +53,7 @@ class Ui_AuxProg(object):
         self.file.setGeometry(QRect(0, 0, 50, 20))
         self.label = QLabel(AuxProg)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(20, 170, 171, 61))
+        self.label.setGeometry(QRect(20, 200, 171, 61))
         font = QFont()
         font.setFamily(u"Xirod")
         font.setPointSize(16)
@@ -99,6 +99,18 @@ class Ui_AuxProg(object):
         self.exit = QPushButton(AuxProg)
         self.exit.setObjectName(u"exit")
         self.exit.setGeometry(QRect(160, 0, 50, 20))
+        self.posX = QLabel(AuxProg)
+        self.posX.setObjectName(u"posX")
+        self.posX.setGeometry(QRect(20, 200, 48, 13))
+        self.posX.setStyleSheet(u"#posX{\n"
+"color: rgb(255, 255, 255);\n"
+"}")
+        self.posY = QLabel(AuxProg)
+        self.posY.setObjectName(u"posY")
+        self.posY.setGeometry(QRect(120, 200, 48, 13))
+        self.posY.setStyleSheet(u"#posY{\n"
+"color: rgb(255, 255, 255);\n"
+"}")
 
         self.retranslateUi(AuxProg)
         self.help.clicked.connect(self.presskeytoclick.hide)
@@ -125,5 +137,6 @@ class Ui_AuxProg(object):
         self.checkBox_2.setText("")
         self.test.setText(QCoreApplication.translate("AuxProg", u"Test", None))
         self.exit.setText(QCoreApplication.translate("AuxProg", u"Exit", None))
+        self.posX.setText(QCoreApplication.translate("AuxProg", u"TextLabel", None))
+        self.posY.setText(QCoreApplication.translate("AuxProg", u"TextLabel", None))
     # retranslateUi
-

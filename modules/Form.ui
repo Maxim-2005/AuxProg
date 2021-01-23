@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>210</width>
-    <height>217</height>
+    <height>251</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -97,7 +97,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>170</y>
+     <y>200</y>
      <width>171</width>
      <height>61</height>
     </rect>
@@ -263,6 +263,42 @@
    </property>
    <property name="text">
     <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="posX">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>48</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#posX{
+color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="posY">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>200</y>
+     <width>48</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#posY{
+color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
    </property>
   </widget>
  </widget>
