@@ -13,7 +13,7 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
-class Ui_AuxProg(QDialog):
+class Ui_AuxProg(object):
     def setupUi(self, AuxProg):
         if not AuxProg.objectName():
             AuxProg.setObjectName(u"AuxProg")
