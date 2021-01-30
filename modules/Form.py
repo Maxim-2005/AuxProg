@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'FormWTeByE.ui'
+## Form generated from reading UI file 'FormWiZPBX.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -13,10 +13,10 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
-class Ui_Auxprog(QWidget):
+class Ui_Auxprog(object):
     def setupUi(self, Auxprog):
         if not Auxprog.objectName():
-                Auxprog.setObjectName(u"Auxprog")
+            Auxprog.setObjectName(u"Auxprog")
         Auxprog.resize(720, 471)
         icon = QIcon()
         icon.addFile(u"../../../../Pictures/Saved Pictures/\u041f\u0443\u0442\u0438\u043d.jpg", QSize(), QIcon.Normal, QIcon.Off)
@@ -26,9 +26,6 @@ class Ui_Auxprog(QWidget):
 "}\n"
 "#PushButton {\n"
 "}")
-        self.textEdit = QTextEdit(Auxprog)
-        self.textEdit.setObjectName(u"textEdit")
-        self.textEdit.setGeometry(QRect(110, 60, 41, 31))
         self.graphicsView = QGraphicsView(Auxprog)
         self.graphicsView.setObjectName(u"graphicsView")
         self.graphicsView.setEnabled(True)
@@ -79,7 +76,7 @@ class Ui_Auxprog(QWidget):
         self.checkBox_3.setGeometry(QRect(430, 120, 111, 17))
         self.checkBox_4 = QCheckBox(Auxprog)
         self.checkBox_4.setObjectName(u"checkBox_4")
-        self.checkBox_4.setGeometry(QRect(430, 150, 161, 17))
+        self.checkBox_4.setGeometry(QRect(430, 150, 161, 16))
         self.checkBox_5 = QCheckBox(Auxprog)
         self.checkBox_5.setObjectName(u"checkBox_5")
         self.checkBox_5.setGeometry(QRect(430, 180, 131, 17))
@@ -178,9 +175,11 @@ class Ui_Auxprog(QWidget):
         self.posY_2 = QLabel(Auxprog)
         self.posY_2.setObjectName(u"posY_2")
         self.posY_2.setGeometry(QRect(550, 40, 141, 41))
+        self.Delay01 = QLineEdit(Auxprog)
+        self.Delay01.setObjectName(u"Delay01")
+        self.Delay01.setGeometry(QRect(110, 60, 51, 20))
         self.graphicsView_3.raise_()
         self.graphicsView.raise_()
-        self.textEdit.raise_()
         self.Startstop.raise_()
         self.label.raise_()
         self.label_2.raise_()
@@ -214,6 +213,7 @@ class Ui_Auxprog(QWidget):
         self.posX.raise_()
         self.posY.raise_()
         self.posY_2.raise_()
+        self.Delay01.raise_()
 
         self.retranslateUi(Auxprog)
         self.pushButton_4.clicked.connect(self.horizontalSlider.hide)
@@ -224,11 +224,6 @@ class Ui_Auxprog(QWidget):
 
     def retranslateUi(self, Auxprog):
         Auxprog.setWindowTitle(QCoreApplication.translate("Auxprog", u"Auxprog", None))
-        self.textEdit.setHtml(QCoreApplication.translate("Auxprog", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">100</span></p></body></html>", None))
         self.Startstop.setText(QCoreApplication.translate("Auxprog", u"\u0421\u0442\u0430\u0440\u0442/\u0421\u0442\u043e\u043f", None))
         self.label.setText(QCoreApplication.translate("Auxprog", u"\u041a\u043b\u0438\u043a\u0435\u0440", None))
         self.label_2.setText(QCoreApplication.translate("Auxprog", u"\u0417\u0430\u0434\u0435\u0440\u0436\u043a\u0430(\u043c\u0441)", None))
@@ -260,5 +255,6 @@ class Ui_Auxprog(QWidget):
         self.posX.setText(QCoreApplication.translate("Auxprog", u"0", None))
         self.posY.setText(QCoreApplication.translate("Auxprog", u"0", None))
         self.posY_2.setText(QCoreApplication.translate("Auxprog", u"<html><head/><body><p><span style=\" font-size:12pt;\">\u041f\u043e\u0437\u0438\u0446\u0438\u044f \u043a\u0443\u0440\u0441\u043e\u0440\u0430:</span></p></body></html>", None))
+        self.Delay01.setText(QCoreApplication.translate("Auxprog", u"100", None))
     # retranslateUi
 
