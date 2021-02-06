@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'FormfOzHqs.ui'
+## Form generated from reading UI file 'untitledOfmyOa.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -13,130 +13,97 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
-class Ui_AuxProg(object):
-    def setupUi(self, AuxProg):
-        if not AuxProg.objectName():
-            AuxProg.setObjectName(u"AuxProg")
-        AuxProg.setEnabled(True)
-        AuxProg.resize(210, 251)
-        AuxProg.setMouseTracking(False)
+class Ui_Form(object):
+    def setupUi(self, Form):
+        if not Form.objectName():
+            Form.setObjectName(u"Form")
+        Form.resize(190, 190)
         icon = QIcon()
         icon.addFile(u"../../../../b8ca4fe6d5fa432462cc4dadb22c6068.png", QSize(), QIcon.Normal, QIcon.Off)
-        AuxProg.setWindowIcon(icon)
-        AuxProg.setStyleSheet(u"QDialog {\n"
-"	\n"
-"	background-color: rgb(72, 72, 72);\n"
-"}\n"
-"\n"
-"\n"
-".QPushButton {\n"
-"	background-color: rgb(85, 170, 255);\n"
-"	color: rgb(255, 255, 255);\n"
-"	border-color: rgb(59, 59, 59);\n"
-"	font: 75 8pt \"System\";\n"
-"}\n"
-"\n"
-"#pushButton{\n"
-"}\n"
-"")
-        self.presskeytoclick = QPushButton(AuxProg)
-        self.presskeytoclick.setObjectName(u"presskeytoclick")
-        self.presskeytoclick.setGeometry(QRect(10, 30, 191, 31))
-        self.help = QPushButton(AuxProg)
-        self.help.setObjectName(u"help")
-        self.help.setGeometry(QRect(10, 70, 191, 31))
-        self.options = QPushButton(AuxProg)
-        self.options.setObjectName(u"options")
-        self.options.setGeometry(QRect(50, 0, 50, 20))
-        self.file = QPushButton(AuxProg)
-        self.file.setObjectName(u"file")
-        self.file.setGeometry(QRect(0, 0, 50, 20))
-        self.label = QLabel(AuxProg)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(20, 200, 171, 61))
+        Form.setWindowIcon(icon)
+        Form.setStyleSheet(u"background-color: rgb(60,60,60);")
+        self.OnOff = QPushButton(Form)
+        self.OnOff.setObjectName(u"OnOff")
+        self.OnOff.setGeometry(QRect(20, 10, 151, 50))
         font = QFont()
-        font.setFamily(u"Xirod")
+        font.setFamily(u"Berlin Sans FB Demi")
         font.setPointSize(16)
-        font.setBold(False)
-        font.setItalic(True)
-        font.setUnderline(False)
-        font.setWeight(50)
-        font.setStrikeOut(False)
-        font.setKerning(False)
-        font.setStyleStrategy(QFont.PreferAntialias)
-        self.label.setFont(font)
-        self.label.setStyleSheet(u"color: rgb(255, 255, 255);")
-        self.freezecursor = QPushButton(AuxProg)
-        self.freezecursor.setObjectName(u"freezecursor")
-        self.freezecursor.setGeometry(QRect(10, 110, 101, 21))
-        self.pushButton_6 = QPushButton(AuxProg)
-        self.pushButton_6.setObjectName(u"pushButton_6")
-        self.pushButton_6.setGeometry(QRect(120, 110, 21, 21))
-        self.dobuleclick = QPushButton(AuxProg)
-        self.dobuleclick.setObjectName(u"dobuleclick")
-        self.dobuleclick.setGeometry(QRect(10, 140, 101, 21))
-        self.pushButton_8 = QPushButton(AuxProg)
-        self.pushButton_8.setObjectName(u"pushButton_8")
-        self.pushButton_8.setGeometry(QRect(120, 140, 21, 21))
-        self.pushButton_9 = QPushButton(AuxProg)
-        self.pushButton_9.setObjectName(u"pushButton_9")
-        self.pushButton_9.setGeometry(QRect(10, 170, 101, 21))
-        self.ms = QLineEdit(AuxProg)
-        self.ms.setObjectName(u"ms")
-        self.ms.setGeometry(QRect(120, 170, 81, 20))
-        self.label_ms = QLabel(AuxProg)
-        self.label_ms.setObjectName(u"label_ms")
-        self.label_ms.setGeometry(QRect(180, 171, 16, 16))
-        self.checkBox = QCheckBox(AuxProg)
-        self.checkBox.setObjectName(u"checkBox")
-        self.checkBox.setGeometry(QRect(123, 110, 21, 21))
-        self.checkBox_2 = QCheckBox(AuxProg)
-        self.checkBox_2.setObjectName(u"checkBox_2")
-        self.checkBox_2.setGeometry(QRect(123, 140, 21, 21))
-        self.test = QPushButton(AuxProg)
-        self.test.setObjectName(u"test")
-        self.test.setGeometry(QRect(155, 115, 41, 41))
-        self.exit = QPushButton(AuxProg)
-        self.exit.setObjectName(u"exit")
-        self.exit.setGeometry(QRect(160, 0, 50, 20))
-        self.posX = QLabel(AuxProg)
-        self.posX.setObjectName(u"posX")
-        self.posX.setGeometry(QRect(20, 200, 48, 13))
-        self.posX.setStyleSheet(u"#posX{\n"
-"color: rgb(255, 255, 255);\n"
+        font.setBold(True)
+        font.setWeight(75)
+        self.OnOff.setFont(font)
+        self.OnOff.setStyleSheet(u"#OnOff{\n"
+"	background-color: rgb(50, 50, 50);\n"
+"	color: rgb(85, 85, 255);\n"
 "}")
-        self.posY = QLabel(AuxProg)
-        self.posY.setObjectName(u"posY")
-        self.posY.setGeometry(QRect(120, 200, 48, 13))
-        self.posY.setStyleSheet(u"#posY{\n"
-"color: rgb(255, 255, 255);\n"
+        self.pos_x = QLabel(Form)
+        self.pos_x.setObjectName(u"pos_x")
+        self.pos_x.setGeometry(QRect(40, 160, 71, 20))
+        self.pos_x.setFont(font)
+        self.pos_x.setStyleSheet(u"#pos_x{\n"
+"	color: rgb(85, 85, 255);\n"
 "}")
+        self.y = QLabel(Form)
+        self.y.setObjectName(u"y")
+        self.y.setGeometry(QRect(80, 160, 20, 21))
+        self.y.setFont(font)
+        self.x = QLabel(Form)
+        self.x.setObjectName(u"x")
+        self.x.setGeometry(QRect(10, 160, 31, 20))
+        self.x.setFont(font)
+        self.pos_y = QLabel(Form)
+        self.pos_y.setObjectName(u"pos_y")
+        self.pos_y.setGeometry(QRect(110, 160, 71, 20))
+        self.pos_y.setFont(font)
+        self.pos_y.setStyleSheet(u"#pos_y{\n"
+"	color: rgb(85, 85, 255);\n"
+"}")
+        self.tempotext = QLabel(Form)
+        self.tempotext.setObjectName(u"tempotext")
+        self.tempotext.setGeometry(QRect(20, 100, 161, 31))
+        self.tempotext.setFont(font)
+        self.tempotext.setStyleSheet(u"#tempotext{\n"
+"	color: rgb(85, 85, 255);\n"
+"}")
+        self.freeze = QCheckBox(Form)
+        self.freeze.setObjectName(u"freeze")
+        self.freeze.setGeometry(QRect(20, 70, 151, 17))
+        self.freeze.setFont(font)
+        self.freeze.setStyleSheet(u"#freeze{\n"
+"	color: rgb(85, 85, 255);\n"
+"}")
+        self.tempo = QLineEdit(Form)
+        self.tempo.setObjectName(u"tempo")
+        self.tempo.setGeometry(QRect(20, 130, 151, 20))
+        self.tempo.setFont(font)
+        self.tempo.setStyleSheet(u"#tempo{\n"
+"	background-color: rgb(50, 50, 50);\n"
+"	color: rgb(85, 85, 255);\n"
+"}")
+        self.symbol = QLabel(Form)
+        self.symbol.setObjectName(u"symbol")
+        self.symbol.setGeometry(QRect(150, 150, 41, 41))
+        font1 = QFont()
+        font1.setFamily(u"Berlin Sans FB Demi")
+        font1.setPointSize(24)
+        font1.setBold(True)
+        font1.setWeight(75)
+        self.symbol.setFont(font1)
 
-        self.retranslateUi(AuxProg)
-        self.help.clicked.connect(self.presskeytoclick.hide)
-        self.presskeytoclick.clicked.connect(self.dobuleclick.update)
+        self.setWindowFlag(Qt.WindowStaysOnTopHint)
+        self.retranslateUi(Form)
 
-        QMetaObject.connectSlotsByName(AuxProg)
+        QMetaObject.connectSlotsByName(Form)
     # setupUi
 
-    def retranslateUi(self, AuxProg):
-        AuxProg.setWindowTitle(QCoreApplication.translate("AuxProg", u"AuxProg", None))
-        self.presskeytoclick.setText(QCoreApplication.translate("AuxProg", u"Press \"Key\" to Click", None))
-        self.help.setText(QCoreApplication.translate("AuxProg", u"Help", None))
-        self.options.setText(QCoreApplication.translate("AuxProg", u"Options", None))
-        self.file.setText(QCoreApplication.translate("AuxProg", u"File", None))
-        self.label.setText(QCoreApplication.translate("AuxProg", u"AUXPROG", None))
-        self.freezecursor.setText(QCoreApplication.translate("AuxProg", u"Freeze Cursor", None))
-        self.pushButton_6.setText("")
-        self.dobuleclick.setText(QCoreApplication.translate("AuxProg", u"Double Click", None))
-        self.pushButton_8.setText("")
-        self.pushButton_9.setText(QCoreApplication.translate("AuxProg", u"Frequency", None))
-        self.ms.setText(QCoreApplication.translate("AuxProg", u"100", None))
-        self.label_ms.setText(QCoreApplication.translate("AuxProg", u"ms", None))
-        self.checkBox.setText("")
-        self.checkBox_2.setText("")
-        self.test.setText(QCoreApplication.translate("AuxProg", u"Test", None))
-        self.exit.setText(QCoreApplication.translate("AuxProg", u"Exit", None))
-        self.posX.setText(QCoreApplication.translate("AuxProg", u"TextLabel", None))
-        self.posY.setText(QCoreApplication.translate("AuxProg", u"TextLabel", None))
+    def retranslateUi(self, Form):
+        Form.setWindowTitle(QCoreApplication.translate("Form", u"AuxProg", None))
+        self.OnOff.setText(QCoreApplication.translate("Form", u"Start/Stop", None))
+        self.pos_x.setText(QCoreApplication.translate("Form", u"0", None))
+        self.y.setText(QCoreApplication.translate("Form", u"Y:", None))
+        self.x.setText(QCoreApplication.translate("Form", u"X :", None))
+        self.pos_y.setText(QCoreApplication.translate("Form", u"0", None))
+        self.tempotext.setText(QCoreApplication.translate("Form", u"Repetition rate:", None))
+        self.freeze.setText(QCoreApplication.translate("Form", u"FreezeCursor", None))
+        self.symbol.setText(QCoreApplication.translate("Form", u"#", None))
     # retranslateUi
+

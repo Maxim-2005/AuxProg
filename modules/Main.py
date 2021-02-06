@@ -1,8 +1,8 @@
 import pyautogui as a
 from PySide2 import QtCore, QtWidgets
-from modules.Form import Ui_AuxProg
+from modules.Form import Ui_Form
 
-class Main(Ui_AuxProg, QtWidgets.QDialog):
+class Main(Ui_Form, QtWidgets.QWidget):
     """код автокликера"""
     def __init__(self):
         super().__init__()
@@ -13,24 +13,26 @@ class Main(Ui_AuxProg, QtWidgets.QDialog):
         self.show()
         #Сигналы слоты
         self.timer = QtCore.QTimer(self)
-        self.timer.setInterval(0)
+        self.timer.setInterval(1)
         self.timer.timeout.connect(self.autoclick)
         self.click_status = False
-        self.presskeytoclick.clicked.connect(self.button_click)
+        self.OnOff.clicked.connect(self.button_click)
 
     def button_click(self):
         """Переключение авктокликера"""
         self.click_status = not self.click_status
         if self.click_status:
             self.timer.start()
-            self.presskeytoclick.setText("STOP")
+            self.OnOff.setText("STOP")
         else:
-            self.presskeytoclick.setText("START")
+            self.OnOff.setText("START")
             self.timer.stop()
 
     def autoclick(self):
         """Автоклик"""
-        a.tripleClickclick()
+        a.tripleClick()
+        a.tripleClick()
+        a.tripleClick()
         print("test")
 
     def mouseMoveEvent(self, e):
