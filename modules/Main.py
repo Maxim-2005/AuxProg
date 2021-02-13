@@ -1,6 +1,8 @@
+import mouse, keyboard
 import pyautogui as a
 from PySide2 import QtCore, QtWidgets
 from modules.Form import Ui_Form
+from time import sleep
 
 class Main(Ui_Form, QtWidgets.QWidget):
     """Код автокликера"""
@@ -18,6 +20,7 @@ class Main(Ui_Form, QtWidgets.QWidget):
         self.timer.timeout.connect(self.auto_click)
         self.click_status = False
         self.Startstop.clicked.connect(self.button_click)
+        keyboard.hook(self.print_pressed_case)
 
     def button_click(self):
         """Автокликер-Переключатель"""
@@ -31,9 +34,18 @@ class Main(Ui_Form, QtWidgets.QWidget):
 
     def auto_click(self):
         """Автокликек-Кликер"""
-        a.click()
+        #a.click()
+        for i in range(100):
+            mouse.click()
+        sleep(0.01)
 
     def mousePressEvent(self, e):
         """Автокликер-Позиция курсора(Qt)"""
         self.posX.setText(str(e.x()))
         self.posY.setText(str(e.y()))
+
+    def print_pressed_case(self, e):
+        """Автокликер-Горячие клавиши(Ketboard)"""
+        print(e.event_type, e.name)
+        if e.event_type == "up":
+            self.button_click()
