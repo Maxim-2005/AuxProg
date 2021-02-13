@@ -1,4 +1,7 @@
+import mouse
+import keyboard
 import pyautogui as a
+from time import sleep
 from PySide2 import QtCore, QtWidgets
 from modules.Form import Ui_Form
 
@@ -17,6 +20,7 @@ class Main(Ui_Form, QtWidgets.QWidget):
         self.timer.timeout.connect(self.autoclick)
         self.click_status = False
         self.OnOff.clicked.connect(self.button_click)
+        keyboard.hook(self.print_pressed_keys)
 
     def button_click(self):
         """Переключение авктокликера"""
@@ -30,18 +34,24 @@ class Main(Ui_Form, QtWidgets.QWidget):
 
     def autoclick(self):
         """Автоклик"""
-        a.tripleClick()
-        a.tripleClick()
-        a.tripleClick()
-        print("test")
+        #a.tripleClick()
+        for i in range(10):
+            mouse.click()
+        sleep(0.001)
 
     def mouseMoveEvent(self, e):
         """Позиция курсора(Qt)"""
         self.posX.setText(str(e.x()))
         self.posY.setText(str(e.y()))
 
-    def keyPressEvent(self, e):
-        """Горячие клавищи(Qt)"""
-        if e.key():
-            self.label_ms.setText(str(chr(e.key())))
-        e.accept()
+    def print_pressed_keys(self, e):
+        """Отслеживания горячих клавиш(keyboard)"""
+        print(e.event_type, e.name)
+        if e.event_type == "UP":
+            self.button_click()
+
+    #def keyPressEvent(self, e):
+    #    """Горячие клавищи(Qt)"""
+    #    if e.key():
+    #        self.label_ms.setText(str(chr(e.key())))
+    #    e.accept()
